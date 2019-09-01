@@ -1,10 +1,12 @@
 package com.github.robertsawyer.testing;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 class AccountTest {
 
@@ -61,4 +63,18 @@ class AccountTest {
         assertNotNull(address);
         assertThat(account, notNullValue());
     }
+
+//    @RepeatedTest(10)  -> adnotacja używana gdy chcemy aby jakiś test wykonał się konkretną ilośc razy
+    @Test
+    void newAccountWithNotNullAdressShouldBeActive(){
+        //given
+        Address address = new Address("Leszka Czarnego", "16");
+
+        //when
+        Account account = new Account(address);
+
+        //then
+        assumingThat(address != null, () -> assertTrue(account.isActive()));
+    }
+
 }

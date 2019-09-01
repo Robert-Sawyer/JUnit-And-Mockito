@@ -5,6 +5,15 @@ public class Account {
     private boolean active;
     private Address address;
 
+    public Account(Address address) {
+        this.address = address;
+        if (address != null) {
+            activate();
+        } else {
+            this.active = false;
+        }
+    }
+
     public Account() {
         this.active = false;
     }

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f7d7477-a462-4e83-9cde-074dd765376d" name="Default Changelist" comment="" />
+    <list default="true" id="2f7d7477-a462-4e83-9cde-074dd765376d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/CartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/github/robertsawyer/testing/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/github/robertsawyer/testing/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/github/robertsawyer/testing/Meal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/github/robertsawyer/testing/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/github/robertsawyer/testing/OrderBackup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/github/robertsawyer/testing/AccountTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/github/robertsawyer/testing/MealTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/github/robertsawyer/testing/OrderBackupTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/github/robertsawyer/testing/OrderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/AccountTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,34 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/AccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            <state relative-caret-position="389">
+              <caret line="74" column="73" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,10 +44,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Meal.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding>
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,22 +65,6 @@
               <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,18 +98,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/OrderBackupTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="151">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orderBackup.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Cart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/CartTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -139,19 +143,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Address.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/AccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/MealTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/OrderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/OrderBackup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Meal.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/OrderBackupTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Cart.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/CartTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/AccountTest.java" />
       </list>
     </option>
   </component>
@@ -168,6 +177,7 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -275,7 +285,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderBackupTest">
+  <component name="RunManager" selected="JUnit.CartTest.cartShouldNotBeEmptyAfterAddingOrder">
+    <configuration name="CartTest.cartShouldNotBeEmptyAfterAddingOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JUnitAndMockito" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.robertsawyer.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.robertsawyer.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.github.robertsawyer.testing.CartTest" />
+      <option name="METHOD_NAME" value="cartShouldNotBeEmptyAfterAddingOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.simulateLargeOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JUnitAndMockito" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.robertsawyer.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.robertsawyer.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.github.robertsawyer.testing.CartTest" />
+      <option name="METHOD_NAME" value="simulateLargeOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MealTest.exceptionShouldBeThrownIfDiscountIsHigherThanThePrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitAndMockito" />
       <extension name="coverage">
@@ -322,45 +364,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.shouldAddMealToOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JUnitAndMockito" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.robertsawyer.testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.robertsawyer.testing" />
-      <option name="MAIN_CLASS_NAME" value="com.github.robertsawyer.testing.OrderTest" />
-      <option name="METHOD_NAME" value="shouldAddMealToOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderTest.shouldRemoveMealFromOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JUnitAndMockito" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.robertsawyer.testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.github.robertsawyer.testing" />
-      <option name="MAIN_CLASS_NAME" value="com.github.robertsawyer.testing.OrderTest" />
-      <option name="METHOD_NAME" value="shouldRemoveMealFromOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CartTest.cartShouldNotBeEmptyAfterAddingOrder" />
+        <item itemvalue="JUnit.CartTest.simulateLargeOrder" />
         <item itemvalue="JUnit.OrderBackupTest" />
         <item itemvalue="JUnit.OrderTest" />
         <item itemvalue="JUnit.MealTest.exceptionShouldBeThrownIfDiscountIsHigherThanThePrice" />
-        <item itemvalue="JUnit.OrderTest.shouldRemoveMealFromOrder" />
-        <item itemvalue="JUnit.OrderTest.shouldAddMealToOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -376,20 +386,19 @@
       <updated>1567105974390</updated>
       <workItem from="1567105976270" duration="2118000" />
       <workItem from="1567257721097" duration="7691000" />
-      <workItem from="1567337889326" duration="3157000" />
+      <workItem from="1567337889326" duration="6752000" />
     </task>
+    <task id="LOCAL-00001" summary="Added files.">
+      <created>1567351024991</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567351024991</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MealTest_referenceToTheSameObjectShouldBeEqual - 2019.09.01 at 10h 07m 48s.xml">
-      <configuration name="MealTest.referenceToTheSameObjectShouldBeEqual" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MealTest_referenceToDifferentObjectShouldNotBeEqual - 2019.09.01 at 10h 08m 39s.xml">
-      <configuration name="MealTest.referenceToDifferentObjectShouldNotBeEqual" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderTest_orderShouldBeEmptyAfterCreation - 2019.09.01 at 11h 30m 57s.xml">
-      <configuration name="OrderTest.orderShouldBeEmptyAfterCreation" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OrderTest_orderShouldBeEmptyAfterCreation - 2019.09.01 at 11h 32m 58s.xml">
       <configuration name="OrderTest.orderShouldBeEmptyAfterCreation" configurationId="JUnit" />
     </history-entry>
@@ -411,9 +420,18 @@
     <history-entry file="OrderBackupTest - 2019.09.01 at 17h 08m 41s.xml">
       <configuration name="OrderBackupTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OrderBackupTest - 2019.09.01 at 17h 13m 11s.xml">
+      <configuration name="OrderBackupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_simulateLargeOrder - 2019.09.01 at 17h 33m 04s.xml">
+      <configuration name="CartTest.simulateLargeOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_cartShouldNotBeEmptyAfterAddingOrder - 2019.09.01 at 18h 09m 00s.xml">
+      <configuration name="CartTest.cartShouldNotBeEmptyAfterAddingOrder" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12966000" />
+    <option name="totallyTimeSpent" value="16561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -486,6 +504,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added files." />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -494,32 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/AccountTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -567,9 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orderBackup.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/OrderBackup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -581,10 +578,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JUnitAndMockito.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" lean-forward="true" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orderBackup.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/OrderBackupTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="151">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/CartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/robertsawyer/testing/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/robertsawyer/testing/AccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="74" column="73" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
