@@ -22,7 +22,7 @@ public class Cart {
     public void simulateLargeOrder() {
 
         for (int i = 0; i < 1000; i++) {
-            Meal meal = new Meal(i%10, "Hamburger nr. " + i);
+            Meal meal = new Meal(i%10, "Hamburger nr. " + i, 1);
             Order order = new Order();
             order.addMealToOrder(meal);
             addOrderToCart(order);

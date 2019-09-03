@@ -5,6 +5,7 @@ public class Account {
     private boolean active;
     private Address address;
 
+
     public Account(Address address) {
         this.address = address;
         if (address != null) {

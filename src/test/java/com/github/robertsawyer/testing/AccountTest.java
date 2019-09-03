@@ -46,7 +46,7 @@ class AccountTest {
 
         //then
         assertNull(address);
-        assertThat(account, nullValue());
+        assertThat(address, nullValue());
     }
 
     @Test

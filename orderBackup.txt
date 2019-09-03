@@ -1,1 +1,1 @@
-Nowe zamówienie: Order{orders=[Meal{price=5, name='Frytki'}]}zarchwizowano
+Nowe zamówienie: Order{orders=[Meal{price=5, name='Frytki'}]} zarchwizowano
