@@ -1,5 +1,6 @@
 package com.github.robertsawyer.testing;
 
+import com.github.robertsawyer.testing.order.Order;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

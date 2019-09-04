@@ -1,4 +1,4 @@
-package com.github.robertsawyer.testing;
+package com.github.robertsawyer.testing.order;
 
 public enum OrderStatus {
 

@@ -1,5 +1,9 @@
-package com.github.robertsawyer.testing;
+package com.github.robertsawyer.testing.order;
 
+import com.github.robertsawyer.testing.BeforeAfterExtension;
+import com.github.robertsawyer.testing.Meal;
+import com.github.robertsawyer.testing.order.Order;
+import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,7 +12,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(BeforeAfterExtension.class)
 class OrderTest {
@@ -29,7 +32,7 @@ class OrderTest {
     void orderShouldBeEmptyAfterCreation(){
         assertThat(order.getOrders(), empty());
         assertThat(order.getOrders().size(), equalTo(0));
-        assertThat(order.getOrders(), Matchers.<Meal>hasSize(0));
+        MatcherAssert.assertThat(order.getOrders(), hasSize(0));
     }
 
     @Test
@@ -41,7 +44,7 @@ class OrderTest {
         order.addMealToOrder(meal);
 
         //then
-        assertThat(order.getOrders(), Matchers.<Meal>hasSize(1));
+        assertThat(order.getOrders(), hasSize(1));
         assertThat(order.getOrders(), contains(meal));
     }
 
@@ -55,7 +58,7 @@ class OrderTest {
         order.removeMealFromOrder(meal);
 
         //then
-        assertThat(order.getOrders(), Matchers.<Meal>hasSize(0));
+        assertThat(order.getOrders(), hasSize(0));
         assertThat(order.getOrders(), not(contains(meal)));
     }
 
@@ -70,7 +73,7 @@ class OrderTest {
         order.addMealToOrder(meal2);
 
         //then
-        assertThat(order.getOrders(), Matchers.<Meal>hasSize(2));
+        assertThat(order.getOrders(), hasSize(2));
         assertThat(order.getOrders(), contains(meal1, meal2));
         //TO JEŚLI KOLEJNOSC DODAWANIE NIE MA ZNACZENIA
         assertThat(order.getOrders(), containsInAnyOrder(meal1, meal2));

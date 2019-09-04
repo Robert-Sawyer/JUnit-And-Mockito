@@ -1,6 +1,7 @@
-package com.github.robertsawyer.testing;
+package com.github.robertsawyer.testing.account;
 
-import org.junit.jupiter.api.RepeatedTest;
+import com.github.robertsawyer.testing.account.Account;
+import com.github.robertsawyer.testing.account.Address;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

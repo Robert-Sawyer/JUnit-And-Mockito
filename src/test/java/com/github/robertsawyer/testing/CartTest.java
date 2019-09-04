@@ -1,5 +1,6 @@
 package com.github.robertsawyer.testing;
 
+import com.github.robertsawyer.testing.order.Order;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

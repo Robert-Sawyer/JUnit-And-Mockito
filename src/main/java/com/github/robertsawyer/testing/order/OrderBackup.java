@@ -1,4 +1,6 @@
-package com.github.robertsawyer.testing;
+package com.github.robertsawyer.testing.order;
+
+import com.github.robertsawyer.testing.order.Order;
 
 import java.io.*;
 

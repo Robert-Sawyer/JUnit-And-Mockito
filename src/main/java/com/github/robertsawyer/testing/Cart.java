@@ -1,5 +1,7 @@
 package com.github.robertsawyer.testing;
 
+import com.github.robertsawyer.testing.order.Order;
+
 import java.util.ArrayList;
 import java.util.List;
 
