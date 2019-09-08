@@ -12,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(BeforeAfterExtension.class)
 class OrderTest {
@@ -77,5 +78,43 @@ class OrderTest {
         assertThat(order.getOrders(), contains(meal1, meal2));
         //TO JEŚLI KOLEJNOSC DODAWANIE NIE MA ZNACZENIA
         assertThat(order.getOrders(), containsInAnyOrder(meal1, meal2));
+    }
+
+    @Test
+    void orderTotalPriceShouldNotExceedMaxValue(){
+
+        //given
+        Meal meal1 = new Meal(Integer.MAX_VALUE, "Burger", 1);
+        Meal meal2 = new Meal(Integer.MAX_VALUE, "BigMac", 1);
+
+        //when
+        order.addMealToOrder(meal1);
+        order.addMealToOrder(meal2);
+
+        //then
+        assertThrows(IllegalStateException.class, () -> order.totalPrice());
+    }
+
+    @Test
+    void emptyOrderTotalPriceShouldEqualZero(){
+        //given
+        //Order powstaje w BeforeEach
+        //then
+        assertThat(order.totalPrice(), is(0));
+    }
+
+    @Test
+    void cancellingOrderShouldRemoveAllMealsFromList(){
+        //given
+        Meal meal1 = new Meal(5, "Burger", 1);
+        Meal meal2 = new Meal(9, "BigMac", 1);
+
+        //when
+        order.addMealToOrder(meal1);
+        order.addMealToOrder(meal2);
+        order.cancel();
+
+        //then
+        assertThat(order.getOrders().size(), is(0));
     }
 }

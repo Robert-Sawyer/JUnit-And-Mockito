@@ -20,6 +20,7 @@ public class OrderBackup {
     }
 
     public void backup(Order order) throws IOException {
+        if (writer == null) throw new IOException("Plik nie istnieje");
         writer.append(order.toString());
     }
 

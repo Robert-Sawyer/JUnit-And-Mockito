@@ -7,6 +7,8 @@ import java.util.List;
 
 public class Order {
 
+    private OrderStatus orderStatus;
+
     private List<Meal> orders = new ArrayList<>();
 
     public void addMealToOrder(Meal meal) {
@@ -17,12 +19,29 @@ public class Order {
         this.orders.remove(meal);
     }
 
+
+    public void changeOrderStatus(OrderStatus orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+    public OrderStatus getOrderStatus() {
+        return orderStatus;
+    }
+
     public List<Meal> getOrders() {
         return orders;
     }
 
     public void cancel(){
         this.orders.clear();
+    }
+
+    int totalPrice(){
+
+        int sum = this.orders.stream().mapToInt(meal -> meal.getPrice()).sum();
+
+        if (sum < 0) {
+            throw new IllegalStateException("Błąd");
+        } else return sum;
     }
 
     @Override

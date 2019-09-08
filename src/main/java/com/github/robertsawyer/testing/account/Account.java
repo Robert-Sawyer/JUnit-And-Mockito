@@ -4,6 +4,7 @@ public class Account {
 
     private boolean active;
     private Address address;
+    private String email;
 
 
     public Account(Address address) {
@@ -33,5 +34,17 @@ public class Account {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public void setEmail(String email) {
+        if (email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$")) {
+            this.email = email;
+        } else {
+            throw new IllegalArgumentException("Niepoprawny email");
+        }
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
