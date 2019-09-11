@@ -3,9 +3,11 @@ package com.github.robertsawyer.testing.account;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
@@ -49,6 +51,23 @@ public class AccountServiceTest {
         assertThat(accountList, hasSize(0));
     }
 
+    @Test
+    void getAccountByName() {
+
+        //given
+        AccountRepository accountRepository = mock(AccountRepository.class);
+        AccountService accountService = new AccountService(accountRepository);
+        given(accountRepository.getByName("Robert")).willReturn(Collections.singletonList("Sawyer"));
+        //alternatywnie:
+//        given(accountRepository.getAllAccounts()).willReturn(accounts);
+
+        //when
+        List<String> accountList = accountService.findByName("Robert");
+
+        //then
+        assertThat(accountList, contains("Sawyer"));
+    }
+
     private static List<Account> prepareAccountData(){
         Address address1 = new Address("Leszka Czarnego", "16");
         Account account1 = new Account(address1);
@@ -60,4 +79,6 @@ public class AccountServiceTest {
 
         return Arrays.asList(account1, account2, account3);
     }
+
+
 }
