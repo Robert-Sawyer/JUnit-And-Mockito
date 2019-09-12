@@ -1,5 +1,6 @@
-package com.github.robertsawyer.testing;
+package com.github.robertsawyer.testing.meal;
 
+import com.github.robertsawyer.testing.meal.Meal;
 import com.github.robertsawyer.testing.order.Order;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;

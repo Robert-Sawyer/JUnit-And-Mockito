@@ -2,9 +2,9 @@ package com.github.robertsawyer.testing.cart;
 
 import com.github.robertsawyer.testing.order.Order;
 import com.github.robertsawyer.testing.order.OrderStatus;
-import com.sun.javaws.JnlpxArgs;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
@@ -15,9 +15,8 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.*;
-import static org.mockito.Mockito.*;
 
-@MockitoSettings(strictness = Strictness.STRICT_STUBS)
+@MockitoSettings(strictness = Strictness.LENIENT)
 @ExtendWith(MockitoExtension.class)
 class CartServiceTest {
 
@@ -72,8 +71,8 @@ class CartServiceTest {
         Cart cart = new Cart();
         cart.addOrderToCart(order);
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        CartService cartService = new CartService(cartHandler);
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        CartService cartService = new CartService(cartHandler);
 
         //jeżeli będziemy mieć na obiekcie cartHandler wywołaną metodę canHandleCart
         //to wtedy powinniśmy mieć zwróconą wartość true
@@ -96,8 +95,8 @@ class CartServiceTest {
         Cart cart = new Cart();
         cart.addOrderToCart(order);
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        CartService cartService = new CartService(cartHandler);
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        CartService cartService = new CartService(cartHandler);
 
         //jeżeli będziemy mieć na obiekcie cartHandler wywołaną metodę canHandleCart
         //to wtedy powinniśmy mieć zwróconą wartość true
@@ -120,8 +119,8 @@ class CartServiceTest {
         Cart cart = new Cart();
         cart.addOrderToCart(order);
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        CartService cartService = new CartService(cartHandler);
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        CartService cartService = new CartService(cartHandler);
 
         //zwróci wartość true jeżeli element c (cart) będzie miał metodę getOrders i lista będzie miała co najmniej jeden element
         given(cartHandler.canHandleCart(argThat(c -> c.getOrders().size() > 0))).willReturn(true);
@@ -143,8 +142,8 @@ class CartServiceTest {
         Cart cart = new Cart();
         cart.addOrderToCart(order);
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        CartService cartService = new CartService(cartHandler);
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        CartService cartService = new CartService(cartHandler);
 
         //zwróci wartość true jeżeli element c (cart) będzie miał metodę getOrders i lista będzie miała co najmniej jeden element
         given(cartHandler.canHandleCart(cart)).willThrow(IllegalStateException.class);
@@ -161,8 +160,8 @@ class CartServiceTest {
         Cart cart = new Cart();
         cart.addOrderToCart(order);
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        CartService cartService = new CartService(cartHandler);
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        CartService cartService = new CartService(cartHandler);
 
         ArgumentCaptor<Cart> argumentCaptor = ArgumentCaptor.forClass(Cart.class);
 
@@ -188,8 +187,8 @@ class CartServiceTest {
         Cart cart = new Cart();
         cart.addOrderToCart(order);
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        CartService cartService = new CartService(cartHandler);
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        CartService cartService = new CartService(cartHandler);
 
         //jeżeli będziemy mieć na obiekcie cartHandler wywołaną metodę canHandleCart
         //to wtedy powinniśmy mieć zwróconą wartość true
@@ -217,8 +216,8 @@ class CartServiceTest {
         Cart cart = new Cart();
         cart.addOrderToCart(order);
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        CartService cartService = new CartService(cartHandler);
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        CartService cartService = new CartService(cartHandler);
 
         //gdy nie znamy wartości przekazywanych argumentów do metody, ale wiemy jakie operacje mają zostać wykonane
         doAnswer(invocationOnMock -> {
@@ -264,10 +263,10 @@ class CartServiceTest {
         cart.addOrderToCart(new Order());
         cart.addOrderToCart(new Order());
 
-        CartHandler cartHandler = mock(CartHandler.class);
-        given(cartHandler.isDeliveryFree(cart)).willCallRealMethod();
+//        CartHandler cartHandler = mock(CartHandler.class);
+//        given(cartHandler.isDeliveryFree(cart)).willCallRealMethod();
         //alternatywa
-        //doCallRealMethod().when(cartHandler).isDeliveryFree(cart);
+        doCallRealMethod().when(cartHandler).isDeliveryFree(cart);
 
         //when
         boolean isDeliveryFree = cartHandler.isDeliveryFree(cart);

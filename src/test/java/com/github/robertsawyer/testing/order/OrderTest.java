@@ -1,10 +1,8 @@
 package com.github.robertsawyer.testing.order;
 
 import com.github.robertsawyer.testing.BeforeAfterExtension;
-import com.github.robertsawyer.testing.Meal;
-import com.github.robertsawyer.testing.order.Order;
+import com.github.robertsawyer.testing.meal.Meal;
 import org.hamcrest.MatcherAssert;
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

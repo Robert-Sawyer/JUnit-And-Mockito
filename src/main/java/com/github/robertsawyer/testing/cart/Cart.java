@@ -1,6 +1,6 @@
 package com.github.robertsawyer.testing.cart;
 
-import com.github.robertsawyer.testing.Meal;
+import com.github.robertsawyer.testing.meal.Meal;
 import com.github.robertsawyer.testing.order.Order;
 
 import java.util.ArrayList;

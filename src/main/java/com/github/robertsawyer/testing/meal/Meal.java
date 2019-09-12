@@ -1,4 +1,4 @@
-package com.github.robertsawyer.testing;
+package com.github.robertsawyer.testing.meal;
 
 import java.util.Objects;
 
@@ -34,7 +34,7 @@ public class Meal {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     @Override

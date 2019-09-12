@@ -1,8 +1,6 @@
 package com.github.robertsawyer.testing.order;
 
-import com.github.robertsawyer.testing.Meal;
-import com.github.robertsawyer.testing.order.Order;
-import com.github.robertsawyer.testing.order.OrderBackup;
+import com.github.robertsawyer.testing.meal.Meal;
 import org.junit.jupiter.api.*;
 
 import java.io.FileNotFoundException;
