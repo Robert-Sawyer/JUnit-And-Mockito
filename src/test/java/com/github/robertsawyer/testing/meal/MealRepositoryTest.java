@@ -53,7 +53,7 @@ public class MealRepositoryTest {
         mealRepository.add(meal);
         mealRepository.add(meal2);
 
-        //when
+        //when 
         List<Meal> result = mealRepository.findByName("Pizza", true);
 
         //then
